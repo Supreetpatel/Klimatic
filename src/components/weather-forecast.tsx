@@ -40,7 +40,7 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
     return acc;
   }, {} as Record<string, DailyForecast>);
 
-  const nextDays = Object.values(dailyForecasts).slice(0, 6);
+  const nextDays = Object.values(dailyForecasts).slice(0, 5);
 
   const formatTemp = (temp: number) => `${Math.round(temp)}`;
 
